@@ -6,9 +6,7 @@ from PIL import Image
 from watson_developer_cloud import VisualRecognitionV3 as vr
 
 #Authorize dropbox connection
-#app_key = 'ais6zkfckgjw4t5'
 app_key = raw_input("Enter app key: ")
-#app_secret = 'ahetrgp97p5by0p'
 app_secret = raw_input("Enter secret key: ")
 
 flow = DropboxOAuth2FlowNoRedirect(app_key, app_secret)
@@ -38,7 +36,7 @@ print fileurl.get('url')
 lasturl = fileurl.get('url')
 
 #examine image file
-instance = vr(api_key='c7e97f739c7a61949b71ef6c34993e94de53181a', version='2016-05-20')
+instance = vr(api_key='put your watson ibm api key here', version='2016-05-20')
 
 img = instance.classify(images_url = lasturl)
 
