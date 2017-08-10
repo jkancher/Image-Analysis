@@ -1,7 +1,7 @@
 # Image-Analysis
 Using Dropbox API for image analysis using Watson IBM API Visual Recognition
 
-Objective: Compare 2 images in the dropbox and identify whether the object in an image has been taken. 
+Objective: Compare 2 images in the dropbox to identify whether the object in the image has been taken by comaring it to another image. 
 This program uses Dropbox api/token and Watson IBM api
 
 Steps to get started:
