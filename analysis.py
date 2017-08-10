@@ -25,6 +25,7 @@ folder_metadata = client.metadata('/')
 print 'metadata: ', folder_metadata
 
 #download first image file
+print " "
 filelocation = raw_input("Enter file location: (example: /Home/13-15-00.jpg) ") 
 f, metadata = client.get_file_and_metadata(filelocation)
 print metadata
@@ -35,7 +36,7 @@ fileurl = client.share(filelocation, short_url = False)
 print fileurl.get('url')
 lasturl = fileurl.get('url')
 
-#examine image file
+#examine first image file
 instance = vr(api_key='put your watson ibm api key here', version='2016-05-20')
 
 img = instance.classify(images_url = lasturl)
